@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGURAS GEOMETRICAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>FIGURAS GEOMÉTRICAS</span>
+    </header>
+    <h1>Cálculo de perímetros y áreas</h1>
+    <div class="container">
+        <div class="recuadro square">
+            <img src="./icons8-square-full-32.png" alt="">
+            <span>Cuadrado</span>
+            <label for="">Ingresar lado</label>
+            <input type="number" placeholder="Lado del cuadrado" id="ladoCuadrado" class="recuadro--input">
+            <input type="button" value="Calcular perímetro" class="recuadro--button" onclick="calculoPeriCuadrado()">
+            <input type="button" value="Calcular área" class="recuadro--button" onclick="calculoAreaCuadrado()">
+            <input type="text" placeholder="Resultado" class="respuestas" readonly id="respuestaCuadrado">
+        </div>
+        <div class="recuadro triangle">
+            <img src="./icons8-triángulo-48.png" alt="">
+            <span>Triángulo</span>
+            <label for="">Ingresar base</label>
+            <input type="number" placeholder="Lado del triangulo" id="ladoTriangulo1" class="recuadro--input">
+            <input type="number" placeholder="Lado del triangulo" id="ladoTriangulo2" class="recuadro--input">
+            <input type="number" placeholder="base del triángulo" id="ladoTriangulo3" class="recuadro--input">
+            <input type="button" value="Calcular perímetro" id="calcularPerimetroTriangulo" class="recuadro--button" onclick="calculoPeriTriangulo()">
+            <input type="button" value="Calcular área" id="calcularAreaTriangulo" class="recuadro--button" onclick="calculoAreaTriangulo()">
+            <input type="text" placeholder="Resultado" class="respuestas" readonly id="respuestaTriangulo">
+        </div>
+        <div class="recuadro circle">
+            <img src="./icons8-360-grados-50.png" alt="Circle">
+            <span>Círculo</span>
+            <label for="">Ingresar radio</label>
+            <input type="number" placeholder="Radio del círculo" id="radioCirculo" class="recuadro--input">
+            <input type="button" value="Calcular perímetro" id="calcularPerimetroCirculo" class="recuadro--button" onclick="calculoPeriCirculo()">
+            <input type="button" value="Calcular área" id="calcularAreaCirculo" class="recuadro--button" onclick="calculoAreaCirculo()">
+            <input type="text" placeholder="Resultado" readonly class="respuestas" id="respuestaCirculo" >
+        </div>
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>

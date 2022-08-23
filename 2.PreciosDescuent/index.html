@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Precios y descuentos</title>
+</head>
+<body>
+    <section class="login">
+        <div class="content">
+            <div class="encabezado">
+                <h2>Calculadora de descuento</h2>
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <label for="price">Precio</label>
+                    <input type="number" id="price" placeholder="precio del producto" class="inputLabel price">
+                    <label for="discount">Descuento %</label>
+                    <input type="number" id="discount" placeholder="descuento del producto" class="inputLabel discount">
+                    <label for="cupon">Cupón</label>
+                    <input type="text" id="cupon" placeholder="#ingresaCupón" class="inputLabel cupon">
+                    <input type="button" value="Calcular" class="button" onclick="generarDescuento()">
+                </form>
+                <div class="response_container">
+                    <p id="response">Aquí aparecerá lo que debes de pagar...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="textSheep">Hecho con ❤️ by @Sheep.gt</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

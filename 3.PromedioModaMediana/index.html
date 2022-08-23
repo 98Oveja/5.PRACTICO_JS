@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Promedio, moda y mediana</title>
+</head>
+<body>
+    
+    <section class="formulario">
+        <div class="container">
+            <div class="container_uno">
+                <p class="title">MEDIDAS DE TENDENCIA CENTRAL</p>
+                <p class="sentences">Las medidas de tendencia central <span class="bold">(MTC)</span> son medidas estadísticas que pretenden resumir en un solo valor a un conjunto de valores. Representan un centro en torno al cual se encuentra ubicado el conjunto de los datos.</p>
+                <img src="./estadi2.png" alt="estadistica">
+            </div>
+            <div class="container_dos">
+                <form action="">
+                    <label for="datos">Ingrese datos a la pila: </label>
+                    <div class="ingreNote">
+                        <input type="number" name="datos" id="datos" placeholder="Ingrese valor" class="inputLabel note">
+                        <input type="button" value="Agregar" class="add" onclick="agregarDato()">
+                    </div>
+                    <input type="button" value="Promedio" class="buttonForm" onclick="generarPromedio()">
+                    <input type="button" value="Mediana" class="buttonForm" onclick="generarMediana()">
+                    <input type="button" value="Moda" class="buttonForm" onclick="generarModa()">
+                </form>
+                <div class="result">
+                    <p class="resultado" id="response">Acá aparecerá el resultado...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
