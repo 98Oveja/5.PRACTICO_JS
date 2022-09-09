@@ -20,6 +20,7 @@ body{
     justify-content: center;
     min-height: calc(100vh - 0px);
 }
+
 .formulario{
     box-shadow: 0px 5px 25px #111;
     background-color: #273036;
