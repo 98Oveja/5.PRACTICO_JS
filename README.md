@@ -20,5 +20,7 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar js con html
 
+## TALLER 4 - ANÁLISIS SALARIAL
 
+## PROYECTO - CÁLCULO DE INTERES SIMPLE Y COMPUESTO
 
